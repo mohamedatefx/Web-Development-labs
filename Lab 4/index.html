@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h2>Todo App</h2>
+
+    <!-- Input + Add button -->
+    <input id="todoInput" placeholder="What needs doing?">
+    <button onclick="addTodo()">Add</button>
+
+    <!-- Filter buttons -->
+    <div class="filters">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('active')">Active</button>
+      <button onclick="setFilter('completed')">Completed</button>
+    </div>
+
+    <!-- The todos will be placed here by JavaScript -->
+    <ul id="todoList"></ul>
+
+    <!-- Bottom bar -->
+    <p id="count"></p>
+    <button onclick="clearCompleted()">Clear completed</button>
+    <button onclick="clearAll()">Clear all</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

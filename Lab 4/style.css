@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1fb;
+}
+
+.box {
+  width: 450px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+#todoInput {
+  width: 300px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.filters {
+  margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* A finished todo gets a line through it */
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
